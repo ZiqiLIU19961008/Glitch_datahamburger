@@ -1,0 +1,125 @@
+h1 { font-family: 'Mali', cursive; color: #DE541E; text-shadow: 3px 2px #494331}
+p { font-family: 'Niramit', sans-serif; color: #293241; font-size: 15px}
+h6 {font-family: 'Roboto', sans-serif; color: #EE6C4D; border: 6px solid #3D5A80; padding: 3px; font-size: 60px }
+
+
+
+.columns{
+  border-radius: 2px;
+  background: #EEE;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+body {
+        background: url(https://cdn.glitch.com/653b3dcc-cb26-487e-bd62-e808fd0a236c%2FSGBD-base-de-donne%CC%81es.jpg?1541068830712)no-repeat center center fixed;
+      
+        background-size: cover;
+      }
+
+/*************************************************** Menu De Navigation *******************************************************/
+
+/* couleur de fond de la grille transparent*/
+
+#MenuDeNavigation, .columns {
+  background: rgba(0, 0, 0, 0)
+}
+
+
+/* background pour l'entête de page*/
+#MenuDeNavigation, .button {
+    background-color: #98C1D9;
+    opacity:0.9;
+    border-radius: 0.2em;
+    border: 3px solid #3D5A80;
+    font-size: 14px;
+    text-color: #EE6C4D;
+}
+
+/* police et l'entête de page*/
+#MenuDeNavigation h2 {
+  font-family: 'Kodchasan', sans-serif;
+  color: #EE6C4D;
+  font-size: 24px;
+  padding-top: 3px;
+  opacity: 100%;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+
+
+/*************************************************** Welcome ******************************************************************/
+
+#presentation {
+  background-size: cover;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+#presentationtext {
+    background-color: #3D5A80;
+    opacity:0.9;
+    border-radius: 0.2em;
+    border: 3px solid #3B0405;
+    font-size: 14px;
+    color: #D6D6B1;
+    font-family: 'Kodchasan', sans-serif;
+}
+
+#presentation, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  color: #EE6C4D;
+}
+
+#presentation, h4 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
+  color: #E0FBFC;
+}
+
+#presentation, h5 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 30px;
+  color: #98C1D9;
+}
+
+/************************************************* Aim of the project **********************************************************/
+
+#FablesPart1 {
+  background-color: #E0FBFC;
+  background-size: cover;
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+
+
+/************************************************* How to code it*****************************************************************/
+
+#FablesPart2 {
+  background-color: #C0D7D8;
+  background-size: cover;
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+
+/************************************************** Any question? **************************************************************/
+
+
+#GiveYourOpinion {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url(https://cdn.glitch.com/653b3dcc-cb26-487e-bd62-e808fd0a236c%2F6cf222e9a52c152ed45ea2958d4bf996_XL.jpg?1541070692522) no-repeat center center fixed;
+  background-size: cover;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+#GiveYourOpinion, .label{
+    color:#E0FBFC ;
+  }

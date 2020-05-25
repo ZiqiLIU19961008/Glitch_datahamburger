@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How to win loyalty of your clients!</title>
+    
+    <!-- google fonts -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+   
+    
+    
+<!------------------------------------------------ Menu de navigation ---------------------------------------------------------------->
+  
+    <section id="MenuDeNavigation">
+    <div class="container"> 
+      <div class="row">
+        <div class="three columns">
+          <a class="button" href="#Welcome"><h2>Welcome</h2></a>
+        </div>
+        <div class="three columns">
+          <a class="button" href="#FablesPart1"><h2>Aim of the project</h2></a>
+        </div>
+        <div class="three columns">
+          <a class="button" href="#FablesPart2"><h2>How to code it</h2></a>
+        </div>
+        <div class="three columns">
+          <a class="button" href="#GiveYourOpinion"><h2>any Question?</h2></a>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+
+    
+  
+    <!------------------------------------------- Welcome ------------------------------------------------->
+    
+    <section id="Welcome">
+      <div class="container" id="presentation">
+        <div class="row">
+          <div class="twelve columns" id="presentationtext">
+            <h3 class="separator"> How to win loyalty of your clients! </h3>
+            <h4>In this project, you will understand how you can win the loyalty of your clients using the data you already have about them and making them come back at your store easily! </h4>
+            <h5><b>I hope you enjoy your reading!</b></h5>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+<!---------------------------------------------------- Aim of the project ------------------------------------------------------------->
+    
+  <section id="FablesPart1">
+    <div class="container">
+      <div class="row">
+        <div class="twelves columns">
+          <h6>Aim of the project</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelves columns">
+          <p>
+            You are a firm that sells products or service, for example you are a store that sells perfum. You are trying to win the loyalty of your clients, so that you're selling more to loyal clients, who are an interesting market for you. <br> It's Valetin's day in three weeeks and for that event you want your men client to offer a new gift, eg. a perfum, to their loved one. But the hardest part is that your clients that have registered long time ago still come to your store. So your thinking of make better offer to them. You are in this case using a based-time loyalty system using your database. For that, we will send them a email reminding them that Valentin's day arrives soon and that if they buy a perfum for women they will have a gift in return. <br><br> Let's see how you do this!
+          </p>
+        </div>
+      </div>
+      
+     
+    </div>
+</section>
+    
+    
+    
+    
+    
+<!----------------------------------------------------- How to code it------------------------------------------------------------------>
+    
+  <section id="FablesPart2">
+    
+    <div class="row">
+      <div class="twelves columns">
+      <h6>
+        How to code it
+      </h6>
+    </div>
+    </div>
+    
+    <div class="row">
+      <p>
+        You start by checking the database you have of your client. Here we are using Firebase for our client's data. I recommend you using Firebase for such data. </p> 
+      <p>
+        You can check how it really work on <a href="https://firebase.google.com/">Firebase</a>
+      </p>
+      
+      <p>
+        So let's have our data base like this: 
+      </p>
+      <img src="https://cdn.glitch.com/653b3dcc-cb26-487e-bd62-e808fd0a236c%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-01%20a%CC%80%2009.41.55.png?1541070558359">
+      
+      <p> <br> <br>
+        You can see that we have all the information we need in our database: name, registred date, email, gender.
+      </p>
+
+      <p>
+        <br>
+        Now we can querry for men clients to send mails only to men. Here is an example of how to querry a data, based on Gitch and using our database: 
+        <br>
+      </p>
+      
+
+        <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+          <iframe
+            allow="geolocation; microphone; camera; midi; encrypted-media"
+            src="https://glitch.com/embed/#!/embed/look-for-male?path=script.js&previewSize=30"
+            alt="look-for-male on Glitch"
+            style="height: 100%; width: 100%; border: 0;">
+          </iframe>
+        </div> 
+      
+      
+      <p>
+    <br> Then, as our idea is based on the duration since the date of registration (so that we can offer better gifts to old clients), we need to calculate that duration. We first need to have the current time. For example, we can use the simple method explain in <a href="https://www.w3schools.com/js/js_date_methods.asp">this article</a>.It is simple in this case to comput the difference, using javascript mathematic language.
+      </p>
+      
+      
+      <p>
+        <br><br>At this stage, we know to who we will send mails, we knows if there are old or young clients for us, determining the gifts we will offer them, we also know their mail address (which we can querry easily). 
+      </p>
+      
+      
+      <p>
+        Last but not least, we send the mails. We can do this by using <a href="https://nodemailer.com/about/">Nodemailer</a> which is a Node.js module which facilitate sending mail to others. On the website, you can have all the information you need to code the sending form. Here is an extract: <br>
+      </p>
+      
+      <center>
+      <img src="https://cdn.glitch.com/653b3dcc-cb26-487e-bd62-e808fd0a236c%2FCapture%20d%E2%80%99e%CC%81cran%202018-11-04%20a%CC%80%2017.41.59.png?1541349813223"; width="60%";align="middle">
+      </center>
+      
+      <p>
+        <br><br>Of course, as we are sending mail to different people, we will use a function to personnalize the different elements (name, gift, ... or even specific text).
+      </p>
+      
+      <center> <p>
+        <br><br><b>And we are done!</b> 
+        </p></center>
+    
+      
+    </div>
+    
+    <center>
+    <iframe src="https://giphy.com/embed/l4FAPaGGeB7D1LfIA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen>
+      </iframe>
+    </center>
+    
+  
+  </section>
+    
+    
+    
+    
+    
+    
+    
+<!------------------------------------------------------ Any questions?--------------------------------------------------------------->
+    
+<section id="GiveYourOpinion">
+  
+  <div class="row">
+        <div class="twelves columns">
+          <h6>Any question? Contact us!</h6>
+        </div>
+      </div>
+  
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Topic of your question</label>
+         <input class="u-full-width" type="text" placeholder="Coding, use, applciation, firebase, ..." id="exampleEmailInput">
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Your message</label>
+      <textarea class="u-full-width" placeholder="Emotion, thoughts, lyrics, ..." id="exampleMessage"></textarea>
+      <label class="example-send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  
+</section>
+
+
+  </body>
+</html>
